@@ -679,12 +679,7 @@ Bridge.assembly("PushySquares", function ($asm, globals) {
 
     Bridge.define("PushySquares.MainClass", {
         main: function Main (args) {
-            // var game = new PushySquares.Game.$ctor1(PushySquares.Map.Standard.$clone(), 4);
-            // document.write("<pre>");
-            // document.writeln(game);
-            // game.MoveDown();
-            // document.writeln(game);
-            // document.write("</pre>");
+            
         }
     });
 
