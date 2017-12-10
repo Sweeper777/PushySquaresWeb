@@ -1,3 +1,7 @@
+///<reference path="p5.global-mode.d.ts"/>
+///<reference path="PushySquares.d.ts"/>
+///<reference path="bridge.d.ts"/>
+
 var canvas;
 function setup() { 
   canvas = createCanvas(400, 400);
