@@ -3,6 +3,7 @@
 ///<reference path="bridge.d.ts"/>
 
 var canvas;
+var game = new PushySquares.Game.$ctor1(PushySquares.Map.Standard.$clone(), 4);
 function setup() { 
   canvas = createCanvas(400, 400);
    var title = document.getElementById("title");
