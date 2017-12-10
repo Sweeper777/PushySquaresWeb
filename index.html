@@ -7,17 +7,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <script src="scripts/sketch.js"></script>
+
     <script src="scripts/bridge.js"></script>
     <script src="scripts/bridge.console.js"></script>
     <script src="scripts/bridge.meta.js"></script>
     <script src="scripts/PushySquares.js"></script>
     <script src="scripts/PushySquares.meta.js"></script>
+    <script src="scripts/sketch.js"></script>
     <script>
-    var game = new PushySquares.Game.$ctor1(PushySquares.Map.Standard.$clone(), 4);
-    document.writeln("<pre>");
-    document.writeln(game.toString());
-    document.writeln("</pre>");
+      var game = new PushySquares.Game.$ctor1(PushySquares.Map.Standard.$clone(), 4);
     </script>
     <center>
       <h1 id="title">Pushy Squares</h1>
