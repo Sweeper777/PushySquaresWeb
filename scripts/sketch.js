@@ -2,6 +2,8 @@
 ///<reference path="PushySquares.d.ts"/>
 ///<reference path="bridge.d.ts"/>
 
+const borderSize = 8;
+
 var canvas;
 function setup() { 
   canvas = createCanvas(windowWidth, windowHeight);
