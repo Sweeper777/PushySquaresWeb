@@ -10,6 +10,15 @@ function shadeColor(color, percent) {
 }
 
 
+function drawSquareView(w, h, color) {
+  var square = createGraphics(w, h);
+  var strokeWidth = w / borderSize;
+  square.background(color);
+  square.strokeWeight(w / borderSize);
+  square.stroke(shadeColor(color, 0.2));
+  square.line(w-strokeWidth / 2, 0, w-strokeWidth / 2, h-strokeWidth / 2);
+  return square;
+}
 var canvas;
 function setup() { 
   canvas = createCanvas(windowWidth, windowHeight);
