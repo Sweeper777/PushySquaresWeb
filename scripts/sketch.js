@@ -19,6 +19,11 @@ function drawSquareView(w, h, color) {
   square.line(w-strokeWidth / 2, 0, w-strokeWidth / 2, h-strokeWidth / 2);
   return square;
 }
+
+function drawBoard(length) {
+  var board = createGraphics(length, length);
+}
+
 var canvas;
 function setup() { 
   canvas = createCanvas(windowWidth, windowHeight);
