@@ -25,6 +25,9 @@ function drawBoard(length) {
   var squareLength = function() {
     return (borderSize * length) / (borderSize * System.Array.getLength(game.Board, 0) + 1);
   };
+  var squareViewLength = function() {
+    return squareLength() - (squareLength() / borderSize);
+  };
 }
 
 var canvas;
