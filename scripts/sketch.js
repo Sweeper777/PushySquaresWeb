@@ -37,6 +37,11 @@ function drawBoard(length) {
     let offset = squareLength / borderSize / 2
     return {x: pointForPosition.x + offset, y: pointForPosition.y + offset};
   };
+
+  var point = function(position) {
+    return {x: strokeWidth / 2 + position.x * squareLength(), y: strokeWidth / 2 + position.y * squareLength()};
+  };
+
 }
 
 var canvas;
