@@ -22,6 +22,9 @@ function drawSquareView(w, h, color) {
 
 function drawBoard(length) {
   var board = createGraphics(length, length);
+  var squareLength = function() {
+    return (borderSize * length) / (borderSize * System.Array.getLength(game.Board, 0) + 1);
+  };
 }
 
 var canvas;
