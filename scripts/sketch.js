@@ -28,6 +28,10 @@ function drawBoard(length) {
   var squareViewLength = function() {
     return squareLength() - (squareLength() / borderSize);
   };
+  var strokeWidth = function() {
+    return squareLength() / borderSize;
+  };
+
 }
 
 var canvas;
