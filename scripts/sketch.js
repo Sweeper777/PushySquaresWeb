@@ -48,6 +48,20 @@ function drawBoard(length) {
     board.image(square, squareOrigin.x, squareOrigin.y);
   };
 
+  for (var i = 0 ; i < System.Array.getLength(game.Board, 0) ; i++) {
+    for (var j = 0 ; j < System.Array.getLength(game.Board, 1) ; j++) {
+      switch (game.Board.get([i, j])) {
+        case PushySquares.Tile.Empty:
+        board.stroke(0);
+        board.strokeWeight(strokeWidth());
+        board.noFill();
+        var pointForSquare = point({x: i, y: j});
+        board.rect(pointForSquare.x, pointForSquare.y, squareLength(), squareLength());
+        break;
+      }
+    }
+  }
+  return board;
 }
 
 var canvas;
