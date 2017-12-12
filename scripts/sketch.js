@@ -42,6 +42,12 @@ function drawBoard(length) {
     return {x: strokeWidth / 2 + position.x * squareLength(), y: strokeWidth / 2 + position.y * squareLength()};
   };
 
+  var addSquareView = function(position, color) {
+    var squareOrigin = squareViewPoint(position);
+    var square = drawSquareView(squareViewLength(), squareViewLength(), color);
+    board.image(square, squareOrigin.x, squareOrigin.y);
+  };
+
 }
 
 var canvas;
