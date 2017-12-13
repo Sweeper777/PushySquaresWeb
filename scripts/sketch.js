@@ -72,4 +72,6 @@ function setup() {
 
 function draw() { 
   background(220);
+  var square = drawSquareView(100, 100, "#ff0000");
+  image(square, 100, 100);
 }
